@@ -28,7 +28,7 @@ public class DataTypes{
         String str2 = "Shannu";
         byte time = 11;
 
-        int [] ids = {101,102,103}; 
+        //int [] ids = {101,102,103}; 
 
         //concatenation
         System.out.println(str+str2+time);
