@@ -20,22 +20,21 @@ public class Dynamic {
             System.out.println("Your age is :"+age);
         }
 
-        if(age>=18){
-            System.err.println("Do you have id");
+        System.out.println("Enter Your Age: ");
+        int newage = sc.nextInt();
+        // voting app dynamic
+        if (newage >= 18) {
+            System.out.println("Do You have ID: (yes/no)");
             String has_id = sc.next();
-
-            if(has_id == "yes"){
-                System.out.println("you can vote");
-            }
-            else{
-                System.out.println("you need id to vote");
-            }
+            if (has_id == "yes"){
+                System.out.println("You can Vote");
+            } else {
+                System.out.println("You Need ID to Vote");
+            }       
+        } 
+        else {
+            System.out.println("You cannot Vote Too Young");
         }
-        else{
-            System.out.println();
-        }
-
-
 
 
 
