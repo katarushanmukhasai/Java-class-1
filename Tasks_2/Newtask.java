@@ -18,7 +18,8 @@ public class Newtask {
 
         System.out.println("Tuition fee: ");
         double tf = sc.nextDouble();
-
+        
+        //System.out.println("Discount Percentage:");
         double dp = 0.0; 
 
         System.out.println(" Academic Topper status");
@@ -35,9 +36,9 @@ public class Newtask {
         */
 
         if (sgl >= 9 && sgl <= 12) {
-            System.out.println("Academic Topper (yes/no): ");
-            String topper = sc.next();
-            // if(topper=="yes"){
+            //System.out.println("Academic Topper (yes/no): ");
+            //String topper = sc.next();
+            // if(topper=="yes"){10
             //     dp = 20.0;
             if (ats) { 
                dp = 20.0;
