@@ -20,16 +20,40 @@ public class StudentGradeTracker {
         //System.out.println("Repeatedly ask student for marks (yes/no):");
         
 
-        System.out.println("Enter num of Scores: ");
-        int score = sc.nextInt();
+        // System.out.println("Enter num of Scores: ");
+        // int score = sc.nextInt();
+        int countsubjects = 0;
         
         int sum = 0;
-        for(int i=0;i<score;i++){
+        // for(int i=0;i<countsubjects;i++){
+        //     System.out.println("Do you want to Enter Marks (yes/no):");
+        //     String Entermarks = sc.next();
+
+        //     if(Entermarks == "no"){
+        //         break;
+        //     }
+
+        //     System.out.println("Enter Marks:");
+        //     int subject = sc.nextInt();
+        //     sum += subject;
+        //     countsubjects++;
+        // }
+        // int avg = sum/countsubjects;
+
+        while (true) {
+            System.out.println("Do you want to Enter Marks (yes/no):");
+            String Entermarks = sc.next();
+
+            if (Entermarks == "no") {
+                break;
+            }
+
             System.out.println("Enter Marks:");
             int subject = sc.nextInt();
             sum += subject;
+            countsubjects++;
         }
-        int avg = sum/score;
+        int avg = sum/countsubjects;
 
 
     /*
@@ -64,7 +88,7 @@ public class StudentGradeTracker {
     System.out.println("Student Name: "+ Student_Name);
     System.out.println("Total Score: "+ sum);
     System.out.println("Average Score: "+ avg);
-    System.out.println("Number Of Subjects / Score: "+ score);
+    System.out.println("Number Of Subjects / Score: "+ countsubjects);
 
     //System.out.println("Award Status: "+ award);
      
